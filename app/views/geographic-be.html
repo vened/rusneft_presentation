@@ -1,0 +1,122 @@
+<div class="content-b" ng-show="lang == 1">
+
+    <div class="row">
+        <div class="col-md-5">
+            <h1 style="margin-bottom: 0">{{geographic}}</h1>
+        </div>
+        <div class="col-md-2 text-right" style="padding-top: 5px">
+            <a class="btn btn-primary" href="#/geographic">
+                <span class="glyphicon glyphicon-arrow-left" style="vertical-align: top"></span>
+                <span style="vertical-align: top">ВЕРНУТЬСЯ</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="map map-be">
+        <img class="img-thumbnail" src="images/content/geo/7-ru.png"/>
+
+        <div ng-click="pRus = 1" ng-hide="pRus == 1" class="btn btn-primary btn-sm btn-m">Минск</div>
+        <div ng-click="pRus = 0" ng-show="pRus == 1" class="btn btn-primary btn-sm btn-m">Минск</div>
+
+
+        <!--begin panel International Petroleum Grouping S.A.-->
+        <div class="panel panel-primary" ng-show="pRus == 1">
+            <div class="panel-heading">
+                ИП «Славнефтехим» ЗАО
+                <div ng-click="pRus = 0"
+                        class="bnt btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></div>
+            </div>
+            <div class="panel-body">
+                <h3>
+                    Генеральный директор – Бруев Иван Александрович
+                </h3>
+                <p>
+                    ИП «Славнефтехим» ЗАО является дочерним предприятием компании и представляет ее интересы в Республике Беларусь в рамках Соглашения
+                    между Государственным концерном "Белнефтехим" и Группой Компаний «РуссНефть».
+                </p>
+                <p>
+                    Основными видами деятельности предприятия являются: переработка нефти на белорусских НПЗ, обеспечение потребителей Беларуси
+                    нефтепродуктами, поставка углеводородного сырья на предприятия нефтехимического комплекса республики и экспорт нефтепродуктов в
+                    страны ближнего Зарубежья, Восточной Европы и Балтии.
+                </p>
+                <p>
+                    За время работы на белорусском рынке предприятие поставило и переработало на крупнейших нефтехимических заводах республики более
+                    4,5 млн. тонн сырья. Реализация полученных нефтепродуктов на экспорт и внутренний рынок Республики Беларусь осуществляется в
+                    соответствии с протоколом, ежемесячно утверждаемым концерном "Белнефтехим" и Министерством экономики Республики Беларусь.
+                </p>
+
+                <h4>Контакты:</h4>
+                <p>
+                    220030 Республика Беларусь <br/>
+                    г. Минск, ул. Энгельса, д. 34 А<br/>
+                    Тел.: 8 -10 - (37517) 210-48-80 <br/>
+                    Факс: 8 -10 - (37517) 210-56-47
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="content-b" ng-show="lang == 2">
+
+    <div class="row">
+        <div class="col-md-5">
+            <h1 style="margin-bottom: 0">{{geographic}}</h1>
+        </div>
+        <div class="col-md-2 text-right" style="padding-top: 5px">
+            <a class="btn btn-primary" href="#/geographic">
+                <span class="glyphicon glyphicon-arrow-left" style="vertical-align: top"></span>
+                <span style="vertical-align: top">BACK</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="map map-be">
+        <img class="img-thumbnail" src="images/content/geo/7-en.png"/>
+
+        <div ng-click="pRus = 1" ng-hide="pRus == 1" class="btn btn-primary btn-sm btn-m">Minsk</div>
+        <div ng-click="pRus = 0" ng-show="pRus == 1" class="btn btn-primary btn-sm btn-m">Minsk</div>
+
+
+        <!--begin panel International Petroleum Grouping S.A.-->
+        <div class="panel panel-primary" ng-show="pRus == 1">
+            <div class="panel-heading">
+                ZAO IP Slavneftehim
+                <div ng-click="pRus = 0"
+                        class="bnt btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></div>
+            </div>
+            <div class="panel-body">
+                <h3>
+                    General Director –Ivan Bruev.
+                </h3>
+                <p>
+                    IP Slavneftekhim ZAO is a subsidiary of RussNeft Group and represents the Company in the Republic of Belarus as part of the
+                    Agreement between the State Group of Companies Belneftekhim and RussNeft Group.
+                </p>
+                <p>The basic activity of the enterprise is oil refining at the Belorussian refineries, provision of the Belorussian consumers with oil
+                    products, supply of hydrocarbon materials to the enterprises of petrochemical complex of the Republic and export of oil products
+                    to the countries of CIS, Eastern Europe and the Baltic states.
+                </p>
+                <p>For the time of development at the Belorussian market, the enterprise delivered and refined in the biggest petrochemical plants of
+                    the Republic more than 4.5 mln tons of raw materials. Domestic and export oil products sales to the Belorussian market are carried
+                    out in accordance with the record, which is monthly confirmed by the Group of Companies Belneftekhim and the Ministry of Economic
+                    Affairs of the Republic of Belarus.
+                </p>
+                <h4>Contacts:</h4>
+                <p>
+                    220030 Republic of Belarus, <br/>
+                    Minsk, Engelsa str., 34 A <br/>
+                    Tel.: 8-10- (37517) 210-48-80 <br/>
+                    Fax: 8-10- (37517) 210-56-47
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

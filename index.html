@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="admin">
+<head>
+    <meta charset="utf-8"/>
+    <title>Группа Компаний «РуссНефть»</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="css/bootstrap-3.1.1-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-resource.min.js"></script>
+    <script src="libs/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+    <script src="app/directives.js"></script>
+    <script src="app/controllers.js"></script>
+</head>
+
+
+<body ng-controller="MiscCtrl">
+
+
+<div class="box">
+
+    <div class="loader" ng-show="loader"></div>
+
+    <div class="b-cont" ng-show="content">
+        <div class="header" ng-controller="LangCtrl" ng-hide="homes">
+            <a ng-show="lang == 1" class="h-logo" href="#/" ng-click="loaded()"><img src="images/logo-m.png"/></a>
+            <a ng-show="lang == 2" class="h-logo" href="#/" ng-click="loaded()"><img src="images/logo-m-en.gif"/></a>
+            <a href="" class="lang-select" ng-click="setRu()" ng-show="lang == 2">{{ru}}</a>
+            <a href="" class="lang-select" ng-click="setEn()" ng-show="lang == 1">{{en}}</a>
+        </div>
+        <div ng-view=""></div>
+        <div class="footer" ng-class="{'en' : lang == 2}" ng-hide="homes"></div>
+        <div class="b-menu" ng-class="{'open' : menuOpen == 1}" ng-hide="homes" ng-include="'partials/menu.html'"></div>
+    </div>
+
+
+</div>
+
+
+<script src="libs/jquery-1.9.1.js"></script>
+<script src="libs/highcharts.js"></script>
+<script src="libs/exporting.js"></script>
+</body>
+</html>

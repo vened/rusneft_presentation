@@ -1,0 +1,202 @@
+<div class="content-b" ng-show="lang == 1">
+
+    <div class="row">
+        <div class="col-md-5">
+            <h1 style="margin-bottom: 0">{{geographic}}</h1>
+        </div>
+        <div class="col-md-2 text-right" style="padding-top: 5px">
+            <a class="btn btn-primary" href="#/geographic">
+                <span class="glyphicon glyphicon-arrow-left" style="vertical-align: top"></span>
+                <span style="vertical-align: top">ВЕРНУТЬСЯ</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="map map-az">
+        <img class="img-thumbnail" src="images/content/geo/8-ru.png"/>
+
+        <div ng-click="pRus = 1" ng-hide="pRus == 1" class="btn btn-primary btn-sm btn-baku">Баку</div>
+        <div ng-click="pRus = 0" ng-show="pRus == 1" class="btn btn-primary btn-sm btn-baku">Баку</div>
+
+        <!--begin panel Баку-->
+        <div ng-show="pRus == 1" class="panel panel-primary">
+            <div class="panel-heading">
+                Баку
+                <div ng-click="pRus = 0" class="bnt btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></div>
+            </div>
+            <div class="panel-body">
+                <ul class="link">
+                    <li ng-click="panelRus = 1">Kura Valley Operating Company</li>
+                    <li ng-click="panelRus = 2">Global Energy Azerbaijan Ltd.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel panel-primary" ng-show="panelRus == 1 && pRus == 1">
+            <div class="panel-heading">
+                Kura Valley Operating Company
+                <div ng-click="panelRus = 0"
+                        class="bnt btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></div>
+            </div>
+            <div class="panel-body">
+                <h3>
+                    Президент – Кирдода Иван Игоревич
+                </h3>
+                <p>
+                    В Азербайджане Группа Компаний «РуссНефть» участвует в совместном предприятии с Государственной нефтяной компанией Азербайджанской
+                    Республики ( ГНКАР) и ведет геологоразведочные работы на лицензионном блоке Падар.
+                </p>
+                <p>
+                    В настоящее время осуществляется геологическая интерпретация сейсморазведочных работ МОГТ 2D-3D ( площадь 220 км2).
+                    Вероятные извлекаемые ресурсы на Падаре по последним оценкам составляют 28,089 млн. тонн.
+                </p>
+                <h4>Контакты:</h4>
+                <p>
+                    г.Баку, ул.Низами, д.69,<br>
+                    бизнес-центр ISR-Plaza, 11 этаж <br>
+                    Тел.: +994 12 437 23 60 <br>
+                    Факс: +994 12 437 27 16
+                </p>
+            </div>
+        </div>
+        <div class="panel panel-primary" ng-show="panelRus == 2 && pRus == 1">
+            <div class="panel-heading">
+                Global Energy Azerbaijan Ltd.
+                <div ng-click="panelRus = 0"
+                        class="bnt btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></div>
+            </div>
+            <div class="panel-body">
+                <h3>
+                    Президент – Кирдода Иван Игоревич
+                </h3>
+                <p>
+                    Global Energy Azerbaijan Ltd. является дочерним добывающим холдингом Группы Компаний «РуссНефть», осуществляющим добычу нефти на
+                    17 нефтегазовых месторождениях в Азербайджане.
+                </p>
+                <p>
+                    Он объединяет в своей структуре следующие компании: Absheron Operating Company Limited (разрабатывает месторождения “Зых”и
+                    “Говсаны”), Karasu Operating Company (“Келаметдин” и “Мишовдаг”), Kura Valey Operating Company (“Падар-Харами”), Neftechala
+                    Investments Limited (“Нефтечала”, “Хыллы”, “Дуровдаг-Бабазанан”), Binagadi Oil Company (“Бинагади-север”, “Бинагади-юг”,
+                    “Чахнагляр”, “Сулу-Тепе”, “Шабандаг”, “Кирмаки”, “Сиан-Шор”, “Масазыр”, “Магомедлы”)
+                </p>
+                <p>
+                    Годовой объем добычи нефти – порядка 600 тыс тонн.
+                </p>
+                <h4>Контакты:</h4>
+                <p>
+                    Республика Азербайджан,<br>
+                    г.Баку, ул.Низами, д.69,<br>
+                    бизнес-центр ISR-Plaza, 11 этаж<br>
+                    Тел.: +994 12 437 23 60 <br>
+                    Факс: +994 12 437 27 16
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="content-b" ng-show="lang == 2">
+
+    <div class="row">
+        <div class="col-md-5">
+            <h1 style="margin-bottom: 0">{{geographic}}</h1>
+        </div>
+        <div class="col-md-2 text-right" style="padding-top: 5px">
+            <a class="btn btn-primary" href="#/geographic">
+                <span class="glyphicon glyphicon-arrow-left" style="vertical-align: top"></span>
+                <span style="vertical-align: top">BACK</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="map map-az">
+        <img class="img-thumbnail" src="images/content/geo/8-en.png"/>
+
+        <div ng-click="pRus = 1" ng-hide="pRus == 1" class="btn btn-primary btn-sm btn-baku">Baku</div>
+        <div ng-click="pRus = 0" ng-show="pRus == 1" class="btn btn-primary btn-sm btn-baku">Baku</div>
+
+        <!--begin panel Баку-->
+        <div ng-show="pRus == 1" class="panel panel-primary">
+            <div class="panel-heading">
+                Baku
+                <div ng-click="pRus = 0" class="bnt btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></div>
+            </div>
+            <div class="panel-body">
+                <ul class="link">
+                    <li ng-click="panelRus = 1">Kura Valley Operating Company</li>
+                    <li ng-click="panelRus = 2">Global Energy Azerbaijan Ltd.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel panel-primary" ng-show="panelRus == 1 && pRus == 1">
+            <div class="panel-heading">
+                Kura Valley Operating Company
+                <div ng-click="panelRus = 0"
+                        class="bnt btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></div>
+            </div>
+            <div class="panel-body">
+                <h3>
+                    President – Ivan Kirdoda
+                </h3>
+                <p>
+                    RussNeft Group participates in a joint venture
+                    with the State Oil Company of Azerbaijan Republic
+                    (SOCAR) and is engaged in geological exploration on
+                    Padar license in Azerbaijan.
+                </p>
+                <p>
+                    At present, RussNeft Group is making
+                    a geological interpretation of CDP-2D - 3D seismic
+                    (area: 220 square kilometers).
+                    Potentially recoverable hydrocarbon resources at Padar
+                    are estimated at 28.089 million tons.
+                </p>
+                <h4>Contact details</h4>
+                <p>
+                    69, Nizami str., Baku, <br>
+                    Business center ISR-Plaza 11 floor<br>
+                    Tel.: +994 12 437 23 60 <br>
+                    Fax: .: +994 12 437 27 16
+                </p>
+            </div>
+        </div>
+        <div class="panel panel-primary" ng-show="panelRus == 2 && pRus == 1">
+            <div class="panel-heading">
+                Global Energy Azerbaijan Ltd.
+                <div ng-click="panelRus = 0"
+                        class="bnt btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></div>
+            </div>
+            <div class="panel-body">
+                <h3>
+                    President – Igor Kirdoda
+                </h3>
+                <p>
+                    Global Energy Azerbaijan Ltd. is RussNeft Group producing subsidiary producing at 17 oil and gas fields of Azerbaijan.
+                </p>
+                <p>
+                    It includes the following companies: Absheron Operating Company Limited (develops Zykh and Govsany fields), Karasu Operating
+                    Company
+                    (Kelametdin and Mishovdag), Kura Valey Operating Company (Padar-Kharami), Neftechala Investments Limited (Neftechala, Khylly,
+                    Durovdag-Babazanan), Binagadi Oil Company (Binagadi-north, Binagadi-south, Chakhnaglyar, Sulu-Tepe, Shabandag, Kirmaki, Sian-Shor,
+                    Masazyr, Magomedly).
+                </p>
+                <p>
+                    Annual oil production output – around 600 thousand tons.
+                </p>
+                <h4>Contact details</h4>
+                <p>
+                    69, Nizami str., Baku, <br>
+                    Business center ISR-Plaza 11 floor<br>
+                    Tel.: +994 12 437 23 60 <br>
+                    Fax: .: +994 12 437 27 16
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,33 @@
+.header{
+	position: relative;
+	height: @height-header;
+	background: url("../images/header.png") no-repeat 0 0;
+
+	img{
+		vertical-align: top;
+	}
+
+	.h-logo{
+		position: absolute;
+		left: 300px;
+		top: 4px;
+	}
+
+	.lang-select{
+		position: absolute;
+		right: 15px;
+		top: 10px;
+		text-decoration: underline;
+	}
+
+}
+
+.footer{
+	position: relative;
+	z-index: 3;
+	height: @height-footer;
+	background: url("../images/footer.png") no-repeat 0 0;
+	&.en{
+		background: url("../images/footer-en.png") no-repeat 0 0;
+	}
+}

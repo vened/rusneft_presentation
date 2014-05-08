@@ -1,0 +1,22 @@
+<span class="btn btn-primary" ng-click="menuShow(1)" ng-show="menuOpen == 0">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+</span>
+<span class="btn btn-primary" ng-click="menuShow(0)" ng-show="menuOpen == 1">
+    <span class="glyphicon glyphicon-chevron-down"></span>
+</span>
+<ul class="menu">
+    <li class="menu-l" ng-show="lang == 1"><a ng-click="menuShow(0)" href="#">В начало презентации</a></li>
+    <li class="menu-l" ng-show="lang == 2"><a ng-click="menuShow(0)" href="#">Home</a></li>
+    <li class="menu-l"><a ng-click="menuShow(0)" href="#about">{{about}}</a></li>
+    <li class="menu-l"><a ng-click="menuShow(0)" href="#president">{{president}}</a></li>
+    <li class="menu-l"><a ng-click="menuShow(0)" href="#upstream">{{upstream}}</a></li>
+    <li class="menu-l"><a ng-click="menuShow(0)" href="#geographic">{{geographic}}</a></li>
+    <li class="menu-l"><a ng-click="menuShow(0)" href="#projects">{{projects}}</a></li>
+    <li class="menu-l"><a ng-click="menuShow(0)" href="#md">{{md}}</a></li>
+    <li class="menu-l"><a ng-click="menuShow(0)" href="#dev">{{dev}}</a></li>
+    <li class="menu-l"><a ng-click="menuShow(0)" href="#environment">{{environment}}</a></li>
+    <li class="menu-l"><a ng-click="menuShow(0)" href="#social">{{ social }}</a></li>
+    <li class="menu-l"><a ng-click="menuShow(0)" href="#contacts">{{contacts}}</a></li>
+    <li class="menu-l" ng-show="lang == 1"><a ng-click="menuShow(0)" href="#video">Видео ролик</a></li>
+    <li class="menu-l" ng-show="lang == 2"><a ng-click="menuShow(0)" href="#video">Video demo</a></li>
+</ul>

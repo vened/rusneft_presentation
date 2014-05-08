@@ -1,0 +1,58 @@
+.menu{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background: @blue;
+	.transition();
+
+	.menu-l{
+		margin: 0;
+
+		a{
+			display: block;
+			height: 51px;
+			line-height: 20px;
+			padding: 16px 20px 14px;
+			font-size: 17px;
+			white-space: nowrap;
+			text-transform: uppercase;
+			text-decoration: none;
+			outline: none;
+			color: #fff;
+			border-bottom: 1px solid @blue-dark;
+			box-shadow: 0 1px 0 rgba(255, 255, 255, .2);
+			text-align: left;
+
+			&:hover{
+				background: @blue-dark2;
+				text-decoration: none;
+			}
+		}
+		&:last-child{
+			a{
+				border: none;
+				box-shadow: none;
+			}
+		}
+	}
+
+}
+
+.b-menu{
+	position: absolute;
+	left: 0;
+	bottom: -568px;
+	overflow: hidden;
+	.transition();
+
+	&.open{
+		bottom: @height-footer;
+	}
+
+	.btn{
+		height: 28px;
+		border-radius: 0;
+	}
+}

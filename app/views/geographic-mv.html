@@ -1,0 +1,142 @@
+<div class="content-b" ng-show="lang == 1">
+
+    <div class="row">
+        <div class="col-md-5">
+            <h1 style="margin-bottom: 0">{{geographic}}</h1>
+        </div>
+        <div class="col-md-2 text-right" style="padding-top: 5px">
+            <a class="btn btn-primary" href="#/geographic">
+                <span class="glyphicon glyphicon-arrow-left" style="vertical-align: top"></span>
+                <span style="vertical-align: top">ВЕРНУТЬСЯ</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="map map-mv">
+        <img class="img-thumbnail" src="images/content/geo/6.png"/>
+
+        <div class="btn btn-primary btn-sm btn-b1">Нуакшот</div>
+        <div ng-click="pRus = 1" ng-hide="pRus == 1" class="btn btn-primary btn-sm btn-b2">Блок 11</div>
+        <div ng-click="pRus = 0" ng-show="pRus == 1" class="btn btn-primary btn-sm btn-b2">Блок 11</div>
+
+
+        <!--begin panel International Petroleum Grouping S.A.-->
+        <div class="panel panel-primary" ng-show="pRus == 1">
+            <div class="panel-heading">
+                International Petroleum Grouping S.A.
+                <div ng-click="pRus = 0"
+                        class="bnt btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></div>
+            </div>
+            <div class="panel-body">
+                <h3>
+                    Генеральный директор - Мохамед Абделлахи Шериф
+                </h3>
+                <p>
+                    РуссНефть через участие в совместном предприятии International Grouping S.A. ( IPG S.A.) ведет геологоразведочные работы на
+                    лицензионном блоке № 11 «Танит» площадью 29143 км2, расположенном в Мавританско-Сенегальском осадочном бассейне Мавритании.
+                    Эксклюзивное разрешение на разведку лицензионного блока №11 предоставлено IPG S.A. на основании Соглашения о разделе продукции
+                    (СРП), заключенного IPG S.A. и Исламской Республикой Мавритания 21.06. 2002 года.
+                </p>
+                <p>
+                    СРП включает 3 этапа.
+                </p>
+                <p>
+                    В течение каждого этапа, продолжительностью 3 года, «РуссНефть» обязана:
+                </p>
+                <ul>
+                    <li>провести не менее 1000 км сейсморазведочных работ 2D и/или ЗD</li>
+                    <li>пробурить не менее 2 разведочных скважин на минимальную глубину 3000 м каждая.</li>
+                </ul>
+                <p>
+                    При завершении каждого этапа IPG S.A. обязуется возвратить государству 25% от площади разведываемого блока.
+                </p>
+
+                <h4>Контакты:</h4>
+                <p>
+                    BP 5007 – LOT 733 – E-Nord<br>
+                    Nouakchott –Mauritanie <br>
+                    Tel: ( 222) 45297961 <br>
+                    Fax: (222) 45297264 <br>
+                    E-mail: ipg@mauritel.mr
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="content-b" ng-show="lang == 2">
+
+    <div class="row">
+        <div class="col-md-5">
+            <h1 style="margin-bottom: 0">{{geographic}}</h1>
+        </div>
+        <div class="col-md-2 text-right" style="padding-top: 5px">
+            <a class="btn btn-primary" href="#/geographic">
+                <span class="glyphicon glyphicon-arrow-left" style="vertical-align: top"></span>
+                <span style="vertical-align: top">BACK</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="map map-mv">
+        <img class="img-thumbnail" src="images/content/geo/6-en.png"/>
+
+        <div class="btn btn-primary btn-sm btn-b1">Nouakchott</div>
+        <div ng-click="pRus = 1" ng-hide="pRus == 1" class="btn btn-primary btn-sm btn-b2">Block 11</div>
+        <div ng-click="pRus = 0" ng-show="pRus == 1" class="btn btn-primary btn-sm btn-b2">Block 11</div>
+
+
+        <!--begin panel International Petroleum Grouping S.A.-->
+        <div class="panel panel-primary" ng-show="pRus == 1">
+            <div class="panel-heading">
+                International Petroleum Grouping S.A.
+                <div ng-click="pRus = 0"
+                        class="bnt btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></div>
+            </div>
+            <div class="panel-body">
+                <h3>
+                    General Director – Mohammed Abdellahi Sherif
+                </h3>
+                <p>
+                    RussNeft Group, through participation in the joint venture IPG carries out exploration works in the license block № 11 Tanit,
+                    which is 29143 km2 in area and is located in the Senegalese-Mauritanian sedimentary basin. An exclusive permit for the exploratory
+                    survey of license block №11 was given to IPG subject to the Production Sharing Agreement (PSA), signed between IPG S.A. and the
+                    Islamic Republic of Mauritania on June 21, 2002.
+                </p>
+                <p>
+                    PSA includes 3 stages.
+                </p>
+                <p>
+                    During each stage, duration of which is 3 years, RussNeft is obliged to:
+                </p>
+                <ul>
+                    <li>
+                        cover not less than 1000 km of seismic survey in 2D and/ or ЗD
+                    </li>
+                    <li>
+                        drill at least 2 exploratory wells to a minimum depth of 3000 m each
+                    </li>
+                </ul>
+                <p>
+                    Upon completion of each stage IPG undertakes to repay to the state 25% of the area of the block being reconnoitered.
+                </p>
+
+                <h4>Contacts:</h4>
+                <p>
+                    BP 5007 – LOT 733 – E-Nord<br>
+                    Nouakchott –Mauritanie <br>
+                    Tel: ( 222) 45297961 <br>
+                    Fax: (222) 45297264 <br>
+                    E-mail: ipg@mauritel.mr
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
