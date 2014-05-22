@@ -138,7 +138,7 @@
             })
             .when('/video', {
                 controller: 'videoCtrl',
-                templateUrl: 'app/views/video.html'
+                templateUrl: 'images/video.html'
             })
             .when('/', {
                 controller: 'HomesCtrl',
